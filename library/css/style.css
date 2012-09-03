@@ -1,0 +1,267 @@
+@import url("bootstrap.css");
+@import url("bootstrap-responsive.css");
+
+@font-face {
+    font-family: DroidSerif;
+    src: url(../fonts/DroidSerif-Regular.ttf);
+    font-weight:400;
+}
+
+/*********************
+GENERAL STYLES
+*********************/
+
+
+body {
+	background-color: #2a190f;
+	color:#fff;
+}
+
+/* Menu */
+
+#inner-header{
+	background-color: #a0cbd7;
+}
+
+#logo { 
+	font: normal normal 1em/1 "Helvetica Neue", Helvetica, Arial, sans serif;
+	text-transform:lowercase; 
+	margin-top: 50px; 
+	padding: 0;	
+}
+#logo a { 
+	text-decoration: none;
+	color: #100; 
+	display: block; 
+	text-align: center;
+	margin: 0 auto;
+	background: url(../img/logo.png) no-repeat;
+	width: 150px;
+	height:100px;
+	padding-top: 2.4em;
+	word-spacing: 0.05em;
+}
+
+nav {
+	width:50%;
+	margin: auto;
+	overflow: hidden;	
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+nav li a {
+	border-right: 1px solid #fff;
+	color: #fff;
+	display: block;
+	float: left;
+	font: 400 13px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;	
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 14.3%;
+	padding:10px;
+	
+	/*TRANSISTIONS*/
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+}
+
+/*HOVER*/
+nav li a:hover {
+	background: #fff;
+}
+
+/*BORDER FIX*/
+nav li:last-child a {
+	border: none;
+}
+
+
+/********************
+WORDPRESS BODY CLASSES
+style a page via class
+********************/
+
+#content{
+	background-color: #a0cbd7;
+	width:100%;	
+}
+
+#inner-content{
+	width:50%;
+	margin:auto;
+	padding:10px;
+}
+
+#twitter{
+	background-color:  #a0cbd7;
+	width:100%;	
+	height:100px;
+}
+
+#inner-twitter{
+	width:50%;
+	margin:auto;
+	padding:10px;
+}
+
+#twitter-img{
+	background: url(../img/twitter-icon.png) no-repeat;
+	float:left;
+	width:50px;
+	padding:20px;
+	height:40px;
+}
+
+#twitter-content{
+	width: 80%;
+	height:40px;
+	vertical-align: bottom;
+	padding:10px;
+	font-size: 17px;
+}
+
+/*********************
+CONTACT FORM
+*********************/
+#contactForm li {
+	list-style-type: none;
+}
+
+#contactForm label{
+	text-transform:uppercase;
+	color:#fff;
+}
+
+#contactForm label.error{
+	color:#fff;
+	background-color:#ff4848;	
+	padding:6px;
+	width:300px;
+	max-width:100%;
+	border: 1px solid transparent;
+	border-radius: 0;
+	clear: both;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+#contactForm input[type="text"]{
+	width:300px;
+	max-width:100%;
+}
+
+#contactForm textarea{
+	width:500px;
+	max-width:100%;
+	height:200px;
+}
+
+#contactForm input[type="text"],
+#contactForm textarea{
+	border:1px solid transparent;
+	border-radius:0;
+	clear:both;
+	color:#000;
+}
+
+#contactForm input[type="text"]:focus,
+#contactForm textarea:focus{
+	background:#fefefe;
+	border:1px solid #ddd;
+	box-shadow:0px 0px 5px #ddd;
+}
+
+/* end contact form */
+
+
+#green-separation{
+	background-color:#99cc00;
+	height:25px;
+}
+
+footer{
+	background-color:#4d311c;
+	height:100%;
+	font-family: DroidSerif;
+	list-style-image: url(../img/arrow.png);
+}
+
+#inner-footer{
+	width:50%;
+	margin:auto;
+}
+
+#inner-footer span{
+	color:#99cc00;
+}
+
+#links, #navigation-footer, #social, #contact{
+	width:25%;
+	float:left;
+}
+
+#credits{
+	text-align: center;
+	padding:10px;
+}
+
+/* MEDIA QUERIES*/
+@media only screen and (max-width : 1220px),
+only screen and (max-device-width : 1220px){
+	nav li a {
+		font: 400 10px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	}
+	
+	nav small {
+		font: 100 10px/1 Helvetica, Verdana, Arial, sans-serif;
+	}
+}
+
+@media only screen and (max-width : 930px),
+only screen and (max-device-width : 930px){
+	nav li a {
+		width: 25%;
+		border-bottom: 1px solid #fff;
+		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	}
+	
+	nav li:last-child a, nav li:nth-child(4) a {
+		border-right: none;
+	}
+	
+	nav li:nth-child(5) a, nav li:nth-child(6) a, nav li:nth-child(7) a, nav li:nth-child(8) a {
+		border-bottom: none;
+	}
+}
+
+@media only screen and (max-width : 580px),
+only screen and (max-device-width : 580px){
+	nav li a {
+		width: 50%;
+		font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	
+	nav li:nth-child(even) a {
+		border-right: none;
+	}
+	
+	nav li:nth-child(5) a, nav li:nth-child(6) a {
+		border-bottom: 1px solid #fff;
+	}
+}
+
+@media only screen and (max-width : 320px),
+only screen and (max-device-width : 320px){
+	nav li a {
+		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	}
+}
