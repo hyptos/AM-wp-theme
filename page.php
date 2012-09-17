@@ -59,10 +59,10 @@
 
 				<!-- Twitter thing here -->
 				<div id="twitter">
-					<div id="inner-twitter">
-						<div id="twitter-img">														
+					<div id="inner-twitter" class="row-fluid">
+						<div id="twitter-img" class="span1">														
 						</div>
-						<div id="twitter-content">
+						<div id="twitter-content" class="span6">
 							<p>Some shit Here about twitter i just said - <a href="#">t.co/XV5ce</a></p>
 						</div>						
 					</div>

@@ -1,15 +1,15 @@
 			<div id="green-separation"></div>
 			<footer class="footer" role="contentinfo">
 			
-				<div id="inner-footer" class="wrap clearfix">
-					<div id="links">
+				<div id="inner-footer" class="wrap clearfix row-fluid">
+					<div id="links" class="span3">
 						<h3><span>Favorite</span> Links</h3>
 						<ul>
 							<li><a href="#">www.techpaf.fr</a></li>
 							<li><a href="#">Subscriber Count</a></li>
 						</ul>
 					</div>
-					<div id="navigation-footer">
+					<div id="navigation-footer" class="span3">
 						<h3><span>Naviga</span>tion</h3>
 						<ul>
 							<li>Home</li>
@@ -19,7 +19,7 @@
 							<li>Contact</li>
 						</ul>
 					</div>
-					<div id="social">
+					<div id="social" class="span3">
 						<h3><span>Follow</span> Me</h3>
 						<ul>
 							<li>twitter</li>
@@ -29,7 +29,7 @@
 							<li>Rss</li>
 						</ul>
 					</div>
-					<div id="contact">
+					<div id="contact" class="span3">
 						<h3><span>Contact</span> Me</h3>
 						<ul>
 							<li>+336 665 56 37 02</li>

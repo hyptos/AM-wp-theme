@@ -100,12 +100,6 @@ style a page via class
 	padding:10px;
 }
 
-#twitter{
-	background-color:  #a0cbd7;
-	width:100%;	
-	height:100px;
-}
-
 #inner-twitter{
 	width:50%;
 	margin:auto;
@@ -114,18 +108,7 @@ style a page via class
 
 #twitter-img{
 	background: url(../img/twitter-icon.png) no-repeat;
-	float:left;
-	width:50px;
-	padding:20px;
-	height:40px;
-}
-
-#twitter-content{
-	width: 80%;
-	height:40px;
-	vertical-align: bottom;
-	padding:10px;
-	font-size: 17px;
+	height:50px;
 }
 
 /*********************
@@ -191,6 +174,8 @@ footer{
 	height:100%;
 	font-family: DroidSerif;
 	list-style-image: url(../img/arrow.png);
+	width:100%;
+	margin:auto;
 }
 
 #inner-footer{
@@ -199,22 +184,21 @@ footer{
 }
 
 #inner-footer span{
-	color:#99cc00;
-}
-
-#links, #navigation-footer, #social, #contact{
-	width:25%;
-	float:left;
+	color:#99cc00;	
 }
 
 #credits{
 	text-align: center;
-	padding:10px;
+	height:30px;
 }
 
 /* MEDIA QUERIES*/
 @media only screen and (max-width : 1220px),
 only screen and (max-device-width : 1220px){
+	nav{
+		width:90%;
+	}
+
 	nav li a {
 		font: 400 10px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
 	}
@@ -222,45 +206,67 @@ only screen and (max-device-width : 1220px){
 	nav small {
 		font: 100 10px/1 Helvetica, Verdana, Arial, sans-serif;
 	}
+
 }
 
 @media only screen and (max-width : 930px),
 only screen and (max-device-width : 930px){
+
+	nav{
+		width:50%;
+	}
+
+	#inner-content{
+		width:80%;
+	}
+
 	nav li a {
-		width: 25%;
+		width: 24%;
 		border-bottom: 1px solid #fff;
 		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
 	}
 	
-	nav li:last-child a, nav li:nth-child(4) a {
-		border-right: none;
+	nav li:last-child a, nav li:nth-child(3) a {
+		border-right: none;		
+	}
+
+	nav li:nth-child(4) a{
+		border-bottom: none;
 	}
 	
 	nav li:nth-child(5) a, nav li:nth-child(6) a, nav li:nth-child(7) a, nav li:nth-child(8) a {
 		border-bottom: none;
 	}
+
+	
 }
 
 @media only screen and (max-width : 580px),
 only screen and (max-device-width : 580px){
+
 	nav li a {
-		width: 50%;
+		width: 35%;
 		font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
 		padding-top: 12px;
 		padding-bottom: 12px;
 	}
-	
-	nav li:nth-child(even) a {
+
+	nav li:nth-child(3) a, nav li:nth-child(5) a{
+		border-right: 1px solid #fff;;
+	}
+
+	nav li:nth-child(2) a, nav li:nth-child(4) a, nav li:nth-child(6) a, {
 		border-right: none;
 	}
-	
-	nav li:nth-child(5) a, nav li:nth-child(6) a {
-		border-bottom: 1px solid #fff;
-	}
+
 }
 
 @media only screen and (max-width : 320px),
 only screen and (max-device-width : 320px){
+
+	nav li a {
+		width: 35%;
+	}
 	nav li a {
 		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
 	}
