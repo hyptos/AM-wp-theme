@@ -3,7 +3,7 @@
 			
 				<div id="inner-footer" class="wrap clearfix row-fluid">
 					<div id="links" class="span3">
-						<h3><span>Favorite</span> Links</h3>
+						<h3><span>Links</span></h3>
 						<ul>
 							<li><a href="#">www.techpaf.fr</a></li>
 							<li><a href="#">Subscriber Count</a></li>
@@ -50,7 +50,24 @@
 		</div> <!-- end #container -->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
-
+		<script type="text/javascript">
+		$(function() {  
+	    var pull        = $('#pull');  
+	        menu        = $('nav ul');  
+	        menuHeight  = menu.height();  
+	  
+		    $(pull).on('click', function(e) {  
+		        e.preventDefault();  
+		        menu.slideToggle();  
+		    });  
+		});  
+		$(window).resize(function(){  
+    var w = $(window).width();  
+    if(w > 320 && menu.is(':hidden')) {  
+        menu.removeAttr('style');  
+    }  
+});   
+	</script>
 	</body>
 
 </html> <!-- end page. what a ride! -->

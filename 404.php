@@ -25,12 +25,6 @@
 							    <p><?php get_search_form(); ?></p>
 				
 							</section> <!-- end search section -->
-						
-							<footer class="article-header">
-							
-							    <p><?php _e("This is the 404.php template.", "bonestheme"); ?></p>
-							
-							</footer> <!-- end article footer -->
 					
 						</article> <!-- end article -->
 			

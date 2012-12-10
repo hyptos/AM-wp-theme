@@ -16,7 +16,7 @@
 		<!-- mobile meta (hooray!) -->
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
 		
 		<!-- icons & favicons (for more: http://themble.com/support/adding-icons-favicons/) -->
 		<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
@@ -53,9 +53,17 @@
 					<?php // bloginfo('description'); ?>
 					
 					
-					<nav role="navigation">
-						<?php bones_main_nav(); // Adjust using Menus in Wordpress Admin ?>
-					</nav>
+					<nav class="clearfix">  
+					    <ul class="clearfix">  
+					        <li><a href="#">Home</a></li>  
+					        <li><a href="#">Portfolio</a></li>  
+					        <li><a href="#">Services</a></li>  
+					        <li><a href="#">Blog</a></li>
+					        <li><a href="#">Contact</a></li>  
+					        <li><a href="#">About</a></li>      
+					    </ul>  
+					    <a href="#" id="pull"><i class="icon-align-right icon-white"></i> Menu</a>  
+					</nav>  
 				
 				</div> <!-- end #inner-header -->
 			

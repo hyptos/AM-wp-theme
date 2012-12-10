@@ -5,6 +5,11 @@
 				<div id="inner-content" class="wrap clearfix">
 			
 				    <div id="main" class="eightcol first clearfix" role="main">
+				    	<br />
+				    	<div class="row" id="about">
+				    		<div class="span1"><img src="wp-content/themes/AM-wp-theme-master/library/img/me.PNG" alt="teuteu" class="img-polaroid"></div>
+				    		<div class="span5"><blockquote><p>Hi, I'm Antoine Martin and I'm a <span id="title">web Developer<span> in Lyon - France. I like designing web application mostly in PHP ! Take a look at some of my recent work :)</p></blockquote></div>
+				    	</div>
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -65,7 +70,7 @@
 			
 				    </div> <!-- end #main -->
     
-				    <?php get_sidebar(); // sidebar 1 ?>
+				    
 				    
 				</div> <!-- end #inner-content -->
     

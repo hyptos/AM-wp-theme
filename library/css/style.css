@@ -17,6 +17,9 @@ body {
 	color:#fff;
 }
 
+#title{
+    font-family: DroidSerif,Helvetica, Arial, sans serif;
+}
 /* Menu */
 
 #inner-header{
@@ -42,47 +45,107 @@ body {
 	word-spacing: 0.05em;
 }
 
-nav {
-	width:50%;
-	margin: auto;
-	overflow: hidden;	
-}
+nav {  
+    height: 40px;  
+    width: 100%;  
+    background: #a0cbd7;  
+    position: relative;   
+}  
+nav ul {  
+    padding: 0;  
+    margin: 0 auto;  
+    width: 600px;  
+    height: 40px;  
+}  
 
-nav ul {
-	list-style: none;
-	overflow: hidden;
-}
+nav li {  
+    display: inline;  
+    float: left;  
+}  
 
-nav li a {
-	border-right: 1px solid #fff;
-	color: #fff;
-	display: block;
-	float: left;
-	font: 400 13px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;	
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	width: 14.3%;
-	padding:10px;
-	
-	/*TRANSISTIONS*/
-	-webkit-transition: background 0.5s ease;
-	   -moz-transition: background 0.5s ease;
-	     -o-transition: background 0.5s ease;
-	    -ms-transition: background 0.5s ease;
-	        transition: background 0.5s ease;
-}
+nav a {  
+    color: #fff;  
+    display: inline-block;  
+    width: 100px;  
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 40px;   
+}  
 
-/*HOVER*/
-nav li a:hover {
-	background: #fff;
-}
+nav li a {  
+    border-right: 1px solid #fff;  
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+nav li:last-child a {  
+    border-right: 0;  
+}  
 
-/*BORDER FIX*/
-nav li:last-child a {
-	border: none;
-}
+nav a:hover, nav a:active {   
+    color:#a0cbd7;
+    background-color:#fff;
+    text-decoration: none;
+}  
 
+nav a#pull {  
+    display: none;  
+}  
+
+@media screen and (max-width: 600px) {  
+    nav {   
+        height: auto;  
+    }  
+    nav ul {  
+        width: 100%;  
+        display: block;  
+        height: auto;  
+    }  
+    nav li {  
+        width: 50%;  
+        float: left;  
+        position: relative;  
+    }  
+
+    nav a {  
+        text-align: left;  
+        width: 100%;  
+        text-indent: 25px;  
+    }  
+}  
+
+@media only screen and (max-width : 480px) {  
+    nav {  
+        border-bottom: 0;  
+    }  
+    nav ul {  
+        display: none;  
+        height: auto;  
+    }  
+    nav a#pull {  
+        display: block;  
+        background-color: #283744;  
+        width: 100%;  
+        position: relative;  
+    }  
+    nav a#pull:after {  
+        content:"";  
+        width: 30px;  
+        height: 30px;  
+        display: inline-block;  
+        position: absolute;  
+        rightright: 15px;  
+        top: 10px;  
+    }
+}  
+
+@media only screen and (max-width : 320px) {  
+    nav li {  
+        display: block;  
+        float: none;  
+        width: 100%;  
+    }  
+}  
 
 /********************
 WORDPRESS BODY CLASSES
@@ -166,7 +229,7 @@ CONTACT FORM
 
 #green-separation{
 	background-color:#99cc00;
-	height:25px;
+	height:5px;
 }
 
 footer{
@@ -190,84 +253,4 @@ footer{
 #credits{
 	text-align: center;
 	height:30px;
-}
-
-/* MEDIA QUERIES*/
-@media only screen and (max-width : 1220px),
-only screen and (max-device-width : 1220px){
-	nav{
-		width:90%;
-	}
-
-	nav li a {
-		font: 400 10px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
-	}
-	
-	nav small {
-		font: 100 10px/1 Helvetica, Verdana, Arial, sans-serif;
-	}
-
-}
-
-@media only screen and (max-width : 930px),
-only screen and (max-device-width : 930px){
-
-	nav{
-		width:50%;
-	}
-
-	#inner-content{
-		width:80%;
-	}
-
-	nav li a {
-		width: 24%;
-		border-bottom: 1px solid #fff;
-		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
-	}
-	
-	nav li:last-child a, nav li:nth-child(3) a {
-		border-right: none;		
-	}
-
-	nav li:nth-child(4) a{
-		border-bottom: none;
-	}
-	
-	nav li:nth-child(5) a, nav li:nth-child(6) a, nav li:nth-child(7) a, nav li:nth-child(8) a {
-		border-bottom: none;
-	}
-
-	
-}
-
-@media only screen and (max-width : 580px),
-only screen and (max-device-width : 580px){
-
-	nav li a {
-		width: 35%;
-		font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
-		padding-top: 12px;
-		padding-bottom: 12px;
-	}
-
-	nav li:nth-child(3) a, nav li:nth-child(5) a{
-		border-right: 1px solid #fff;;
-	}
-
-	nav li:nth-child(2) a, nav li:nth-child(4) a, nav li:nth-child(6) a, {
-		border-right: none;
-	}
-
-}
-
-@media only screen and (max-width : 320px),
-only screen and (max-device-width : 320px){
-
-	nav li a {
-		width: 35%;
-	}
-	nav li a {
-		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
-	}
 }
