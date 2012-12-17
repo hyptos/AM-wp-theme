@@ -13,8 +13,16 @@ GENERAL STYLES
 
 
 body {
-	background-color: #2a190f;
+	background-color: #1C1C1C;
 	color:#fff;
+}
+
+#work{
+    background-color: #fff;
+    color:#939393;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow:4px 2px 5px #000;
+
 }
 
 #title{
@@ -158,13 +166,11 @@ style a page via class
 }
 
 #inner-content{
-	width:50%;
-	margin:auto;
-	padding:10px;
+    width:70%;
 }
 
 #inner-twitter{
-	width:50%;
+	width:60%;
 	margin:auto;
 	padding:10px;
 }
@@ -228,29 +234,31 @@ CONTACT FORM
 
 
 #green-separation{
-	background-color:#99cc00;
-	height:5px;
+    background-image: url(../img/arrow_down.png);
+	height:25px;
 }
 
 footer{
-	background-color:#4d311c;
-	height:100%;
+	background-color:#252525;
+    background-image: url(../img/navy_blue.png);
 	font-family: DroidSerif;
-	list-style-image: url(../img/arrow.png);
-	width:100%;
-	margin:auto;
 }
 
 #inner-footer{
-	width:50%;
-	margin:auto;
+	width:70%;
 }
 
-#inner-footer span{
-	color:#99cc00;	
+#inner-footer li{
+    list-style: none;
+}
+
+
+.divider{
+    background-image: url(../img/divider.png);
 }
 
 #credits{
 	text-align: center;
-	height:30px;
+    margin-top:10px;
+    color:#ddd;
 }

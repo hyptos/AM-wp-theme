@@ -2,14 +2,61 @@
 			
 			<div id="content">
 			
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="container">
 			
-				    <div id="main" class="eightcol first clearfix" role="main">
+				    <div id="main" class="" role="main">
 				    	<br />
 				    	<div class="row" id="about">
 				    		<div class="span1"><img src="wp-content/themes/AM-wp-theme-master/library/img/me.PNG" alt="teuteu" class="img-polaroid"></div>
-				    		<div class="span5"><blockquote><p>Hi, I'm Antoine Martin and I'm a <span id="title">web Developer<span> in Lyon - France. I like designing web application mostly in PHP ! Take a look at some of my recent work :)</p></blockquote></div>
+				    		<div class="span8"><blockquote><p>Hi, I'm Antoine Martin and I'm a <span id="title">web Developer<span> in Lyon - France. I like designing web application mostly in PHP ! Take a look at some of my recent work :)</p></blockquote></div>
 				    	</div>
+				    	
+				   <div id="services" class="row">
+				   	<div class="span12">
+				   		<h2>Services</h2>
+				   	</div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			        </div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			       </div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			        </div>
+			      </div>		
+			      
+			      <div id="work" class="row">
+			      	<div class="span12">
+				   		<h2>Recent Work</h2>
+				   	</div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			        </div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			       </div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			        </div>
+			      </div>
+			      <div class="row">	
+			      	<div class="span12">
+				   		<h2>Blog</h2>
+				   	</div>
+				  </div>
 
 					    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					

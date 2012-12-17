@@ -1,49 +1,29 @@
-			<div id="green-separation"></div>
-			<footer class="footer" role="contentinfo">
 			
-				<div id="inner-footer" class="wrap clearfix row-fluid">
-					<div id="links" class="span3">
-						<h3><span>Links</span></h3>
-						<ul>
-							<li><a href="#">www.techpaf.fr</a></li>
-							<li><a href="#">Subscriber Count</a></li>
-						</ul>
-					</div>
-					<div id="navigation-footer" class="span3">
-						<h3><span>Naviga</span>tion</h3>
-						<ul>
-							<li>Home</li>
-							<li>Portfolio</li>
-							<li>Services</li>
-							<li>Gadget</li>
-							<li>Contact</li>
-						</ul>
-					</div>
-					<div id="social" class="span3">
-						<h3><span>Follow</span> Me</h3>
-						<ul>
-							<li>twitter</li>
-							<li>facebook</li>
-							<li>plus</li>
-							<li>Linkedin</li>
-							<li>Rss</li>
-						</ul>
-					</div>
-					<div id="contact" class="span3">
-						<h3><span>Contact</span> Me</h3>
-						<ul>
-							<li>+336 665 56 37 02</li>
-							<li>antoine.martin@techpaf.fr</li>
-							<li>23 rue du docteur rollet</li>
-							<li>69100 - Villeurbanne</li>
-							<li><a href=" #">Contact Form</a></li>							
-						</ul>
-					</div>
-					<div id="clear"></div>
+			<footer class="footer" role="contentinfo">
+			<div id="green-separation"></div>
+				<div id="inner-footer" class="container">
+					<div class="row">
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			        </div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			       </div>
+			        <div class="span3">
+			          <h2>Heading</h2>
+			          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+			          <p><a class="btn" href="#">View details »</a></p>
+			        </div>
+			      </div>				
+					
 				</div> <!-- end #inner-footer -->
 				
 			</footer> <!-- end footer -->
-			<div id="credits">		
+			<div id="credits" class="container">				
 					<p class="attribution">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>.</p>
 			</div>
 		
