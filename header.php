@@ -55,12 +55,12 @@
 					
 					<nav class="clearfix">  
 					    <ul class="clearfix">  
-					        <li><a href="#">Home</a></li>  
-					        <li><a href="#">Portfolio</a></li>  
-					        <li><a href="#">Services</a></li>  
-					        <li><a href="#">Blog</a></li>
-					        <li><a href="#">Contact</a></li>  
-					        <li><a href="#">About</a></li>      
+					        <li><a href="<?php echo home_url(); ?>/home">Home</a></li>  
+					        <li><a href="<?php echo home_url(); ?>/portfolio">Portfolio</a></li>  
+					        <li><a href="<?php echo home_url(); ?>/services">Services</a></li>  
+					        <li><a href="<?php echo home_url(); ?>/blog">Blog</a></li>
+					        <li><a href="<?php echo home_url(); ?>/contact">Contact</a></li>  
+					        <li><a href="<?php echo home_url(); ?>/about">About</a></li>      
 					    </ul>  
 					    <a href="#" id="pull"><i class="icon-align-right icon-white"></i> Menu</a>  
 					</nav>  

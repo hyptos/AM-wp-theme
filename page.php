@@ -2,7 +2,7 @@
 			
 			<div id="content">
 			
-				<div id="inner-content" class="wrap clearfix">
+				<div id="inner-content" class="container">
 			
 				    <div id="main" class="eightcol first clearfix" role="main">
 
@@ -52,7 +52,7 @@
 			
     				</div> <!-- end #main -->
     
-				    <?php get_sidebar(); // sidebar 1 ?>
+				    
 				    
 				</div> <!-- end #inner-content -->
 

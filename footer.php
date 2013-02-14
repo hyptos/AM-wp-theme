@@ -4,19 +4,30 @@
 				<div id="inner-footer" class="container">
 					<div class="row">
 			        <div class="span3">
-			          <h2>Heading</h2>
-			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <h2>Links</h2>
+			          <ul>
+			          	<li><a href="#">something</a></li>
+			          	<li>Something</li>
+			          	<li>Something</li>
+			          </ul>
 			          <p><a class="btn" href="#">View details »</a></p>
 			        </div>
 			        <div class="span3">
-			          <h2>Heading</h2>
-			          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+			          <h2>Social</h2>
+			          <ul>
+			          	<li>Twitter</li>
+			          	<li>Facebook</li>
+			          	<li>Github</li>
+			          </ul>
 			          <p><a class="btn" href="#">View details »</a></p>
 			       </div>
 			        <div class="span3">
-			          <h2>Heading</h2>
-			          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-			          <p><a class="btn" href="#">View details »</a></p>
+			          <h2>Contact</h2>
+			          <ul>
+			          	<li>Something</li>
+			          	<li>Something</li>
+			          	<li>Something</li>
+			          </ul>
 			        </div>
 			      </div>				
 					

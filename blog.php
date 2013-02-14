@@ -1,12 +1,20 @@
+<?php
+/*
+Template Name: blog
+*/
+?>
+
 <?php get_header(); ?>
 			
 			<div id="content">
-
+			
 				<div id="inner-content" class="container">
 			
-					<div id="main" class="eightcol first clearfix" role="main">
-
-						<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				    <div id="main" class="eightcol first clearfix" role="main">
+				    	
+				    	
+				    	
+				    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
 							<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 						
@@ -50,12 +58,24 @@
 					
 						<?php endif; ?>
 			
-					</div> <!-- end #main -->
+    				</div> <!-- end #main -->
     
-					
-
+				
 				</div> <!-- end #inner-content -->
-    
+
+
+				<!-- Twitter thing here -->
+				<div id="twitter">
+					<div id="inner-twitter" class="row">
+						<div id="twitter-img" class="span1">														
+						</div>
+						<div id="twitter-content" class="span8">
+							<p>Some shit Here about twitter i just said - <a href="#">t.co/XV5ce</a></p>
+						</div>						
+					</div>
+				</div>
+    			
+
 			</div> <!-- end #content -->
 
 <?php get_footer(); ?>
